@@ -19,22 +19,6 @@
   },
   "author": "",
   "license": "MIT",
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "vant-cli commit-lint"
-    }
-  },
-  "lint-staged": {
-    "*.{ts,tsx,js,jsx,vue}": [
-      "eslint --fix",
-      "git add"
-    ],
-    "*.{vue,css,less,scss}": [
-      "stylelint --fix",
-      "git add"
-    ]
-  },
   "peerDependencies": {
     "vue": "^2.6.11",
     "vue-template-compiler": "^2.6.11"
@@ -50,14 +34,6 @@
     "extends": [
       "@vant"
     ]
-  },
-  "stylelint": {
-    "extends": [
-      "@vant/stylelint-config"
-    ]
-  },
-  "prettier": {
-    "singleQuote": true
   },
   "browserslist": [
     "Android >= 4.0",
