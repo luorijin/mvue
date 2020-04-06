@@ -1,0 +1,28 @@
+@themeColor:#409bf7;
+@boderLine:#ebedf0;
+
+.vue-overflow{
+    overflow: hidden;
+}
+.border-bottom(){
+    &:after{
+        position:absolute;
+        content: "";
+        width:100%;
+        left: 0;
+        bottom:0;
+        border-bottom: 1px solid #f4f4f4;
+        transform: scaleY(.5);
+    }
+}
+.border-top(){
+    &:after{
+        position:absolute;
+        content: "";
+        width:100%;
+        left: 0;
+        top:0;
+        border-bottom: 1px solid #f4f4f4;
+        transform: scaleY(.5);
+    }
+}
